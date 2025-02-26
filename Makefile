@@ -6,7 +6,7 @@
 #    By: shutan <shutan@student.42berlin.de>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/26 11:06:45 by shutan            #+#    #+#              #
-#    Updated: 2025/02/26 11:17:50 by shutan           ###   ########.fr        #
+#    Updated: 2025/02/26 18:17:00 by shutan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,10 @@ SRCS = $(SRC_DIR)/main.c \
        $(SRC_DIR)/sort_small.c \
        $(SRC_DIR)/sort_large.c \
        $(SRC_DIR)/cost_calculation.c \
-       $(SRC_DIR)/cost_calculation2.c
+       $(SRC_DIR)/cost_calculation2.c \
+       $(SRC_DIR)/error_control.c \
+       $(SRC_DIR)/parse_utils.c \
+       $(SRC_DIR)/split_utils.c
 
 OBJS = $(SRCS:.c=.o)
 

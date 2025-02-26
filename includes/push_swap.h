@@ -6,7 +6,7 @@
 /*   By: shutan <shutan@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 11:07:05 by shutan            #+#    #+#             */
-/*   Updated: 2025/02/26 14:58:02 by shutan           ###   ########.fr       */
+/*   Updated: 2025/02/26 18:19:59 by shutan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,16 @@ int		has_duplicate(t_stack *stack, int num);
 
 /* 辅助函数 */
 long	atol(const char *str);
+
+int		is_valid_int(const char *str);
+void	free_split_result(char **result, int count);
+char	**split_string(const char *str, const char *delim, int *count);
+
+/* 添加新函数声明 */
+int		parse_and_fill_stack(int argc, char **argv, t_stack *stack_a);
+char	**handle_split_error(char *s, char **result, int spaces);
+char	**add_token_to_result(char **result, char *token, int *spaces);
+int		init_split(const char *str, const char *delim,
+			char **s, char ***result);
 
 #endif 
