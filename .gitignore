@@ -1,0 +1,17 @@
+README.md
+implementation.md
+
+# 可执行文件
+push_swap
+checker
+
+# 目标文件
+*.o
+
+# 临时文件
+*.swp
+.DS_Store
+.vscode/
+*.dSYM/
+
+Note.md
